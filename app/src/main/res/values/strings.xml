@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Lab_zero_programmable_android</string>
+    <string name="button" translatable="false">button</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add">add</string>
+    <string name="cancel">Cancel</string>
+    <string name="title">title</string>
+    <string name="description">Description</string>
+    <string name="describe_the_task">Describe the task</string>
+    <string name="default_description">My task description</string>
+    <string name="default_title">title</string>
+    <string name="name">name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="umnamed">Unnamed</string>
+    <string name="no_number">No Number</string>
+
+
+</resources>

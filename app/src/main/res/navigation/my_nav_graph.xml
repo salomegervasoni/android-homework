@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav_graph"
+    app:startDestination="@id/person_Fragment">
+
+    <fragment
+        android:id="@+id/displayTaskFragment"
+        android:name="com.example.lab_zero_programmable_android.DisplayTaskFragment"
+        android:label="fragment_display_task"
+        tools:layout="@layout/fragment_display_task" />
+    <fragment
+        android:id="@+id/addTaskFragment"
+        android:name="com.example.lab_zero_programmable_android.AddTaskFragment"
+        android:label="fragment_add_task"
+        tools:layout="@layout/fragment_add_task" >
+        <action
+            android:id="@+id/action_addTaskFragment_to_person_Fragment"
+            app:destination="@id/person_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/person_Fragment"
+        android:name="com.example.lab_zero_programmable_android.Person_Fragment"
+        android:label="Person_Fragment" >
+        <action
+            android:id="@+id/action_person_Fragment_to_addTaskFragment"
+            app:destination="@id/addTaskFragment" />
+        <action
+            android:id="@+id/action_person_Fragment_to_displayTaskFragment"
+            app:destination="@id/displayTaskFragment" />
+        <action
+            android:id="@+id/action_person_Fragment_to_call_activity"
+            app:destination="@id/call_activity" />
+    </fragment>
+    <fragment
+        android:id="@+id/call_activity"
+        android:name="com.example.lab_zero_programmable_android.call_activity"
+        android:label="fragment_call_activity"
+        tools:layout="@layout/fragment_call_activity" />
+</navigation>
